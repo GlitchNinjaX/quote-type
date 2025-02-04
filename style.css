@@ -1,0 +1,83 @@
+@keyframes fadeIn {
+  0%{opacity: 0};
+  100% {opacity: 1};
+}
+
+body {
+  font-family: Roboto, Arial;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(40, 40, 40);
+  animation: 4s fadeIn ease;
+}
+
+.logo {
+  justify-content: center;
+}
+
+.logo * {
+  display: inline-block;
+  color: rgb(44, 229, 106);
+  font-size: 3rem;
+  margin-right: 30px;
+  margin-bottom: 300px;
+}
+
+.timer {
+  font-family: monospace, Roboto, Arial;
+  color: white;
+  font-size: 2rem;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.typingText {
+  font-family: monospace;
+  max-width: 1500px;
+  text-align: left;
+  font-size: 2rem;
+  background-color: rgb(62, 62, 62);
+  padding: 30px;
+  color: white;
+  line-height: 1.5;
+  margin-bottom: 100px;
+}
+
+.letter,
+.space {
+  display: inline;
+  margin: 0.5px;
+  color: white;
+  transition: color 0.15s, background-color 0.15s;
+}
+
+.results {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-size: 2.5rem;
+  gap: 50px;
+}
+
+.tryAgainBtn {
+  display: block;
+  font-family: Roboto, Arial;
+  font-size: 2.5rem;
+  padding: 20px 2%;
+  background-color: rgb(204, 190, 84);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+.tryAgainBtn:hover {
+  background-color: rgb(215, 204, 121);
+  transform: scale(1.25, 1.25);
+}
+
+.tryAgainBtn:active {
+  background-color: rgb(239, 234, 200);
+}
